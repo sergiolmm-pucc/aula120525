@@ -1,0 +1,29 @@
+nome: Testes Unitarios
+
+on: push
+
+jobs:
+
+  Testando_codigo:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtem o codigo do repositorio git atual
+        uses: actions/checkout@v3
+      - name: Instala o node no ubuntu
+        uses: actions/setup-node@v3
+      - name: Instala as dependencias
+        run: npm ci
+
+      - name: Roda os testes
+        run: npm test
+
+      - name: Gera relatório de testes
+        uses: dorny/test-reporter@v1
+        if: success() || failure()  # roda de qualquer maneira
+	with:
+          name: Jest tests
+          path: j*.xml
+          reporter: jest-junit
+
+

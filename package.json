@@ -1,0 +1,30 @@
+{
+  "name": "aula120525",
+  "version": "1.0.0",
+  "description": "Exemplo para turma 102",
+  "keywords": [
+    "aula",
+    "node",
+    "test",
+    "automatico"
+  ],
+  "homepage": "https://github.com/sergiolmm-pucc/aula120525#readme",
+  "bugs": {
+    "url": "https://github.com/sergiolmm-pucc/aula120525/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiolmm-pucc/aula120525.git"
+  },
+  "license": "ISC",
+  "author": "SLMM",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --ci --reporters=default --reporters=jest-junit"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0"
+  }
+}

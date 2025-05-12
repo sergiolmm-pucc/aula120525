@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.126">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-12T13:23:01" time="0.103" tests="1">
+    <testcase classname=" Soma 1 + 2 igual a 3" name=" Soma 1 + 2 igual a 3" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
